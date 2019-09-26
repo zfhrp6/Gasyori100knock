@@ -12,3 +12,7 @@ image = "0.22.2"
 [[bin]]
 name = "answer1"
 path = "Question_01_10/answers_rust/answer_1.rs"
+
+[[bin]]
+name = "answer2"
+path = "Question_01_10/answers_rust/answer_2.rs"
