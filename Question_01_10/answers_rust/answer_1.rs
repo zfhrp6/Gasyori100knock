@@ -1,5 +1,4 @@
 use image::DynamicImage::*;
-use std::env;
 use std::path::Path;
 use std::process;
 
@@ -24,11 +23,14 @@ fn main() {
     };
     let (width, height) = (img.width(), img.height());
 
-    let new_image = image::save_buffer(
+    match image::save_buffer(
         &Path::new("Question_01_10/answers_rust/answer_1.jpg"),
         &new_img,
         width,
         height,
         image::ColorType::RGB(8),
-    );
+    ) {
+        Err(_) => process::exit(1),
+        _ => (),
+    }
 }
