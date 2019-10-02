@@ -20,3 +20,7 @@ path = "Question_01_10/answers_rust/answer_2.rs"
 [[bin]]
 name = "answer3"
 path = "Question_01_10/answers_rust/answer_3.rs"
+
+[[bin]]
+name = "answer5"
+path = "Question_01_10/answers_rust/answer_5.rs"
